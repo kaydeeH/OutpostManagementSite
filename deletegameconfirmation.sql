@@ -14,7 +14,8 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Cancel' as title;
+    'Cancel' as title,
+    'azure' as color;
 
 select
 	'alert' as component,
@@ -26,7 +27,8 @@ select
     'form' as component,
     false as auto_submit,
     'deletegame.sql' as action,
-    'Confirm Delete' as validate;
+    'Confirm Delete' as validate,
+    'red' as validate_color;
 
 select 'hidden' as type, 'Name' as name, game_name as value from games where game_id = $id::integer;
 select 'hidden' as type, 'Id' as name, $id as value;

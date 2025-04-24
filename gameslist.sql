@@ -14,10 +14,12 @@ select
     'button' as component;
 select 
     '/index.sql' as link,
-    'Home' as title;
+    'Home' as title,
+    'azure' as color;
 select 
     '/addgame.sql' as link,
-    'Add New Game' as title;
+    'Add New Game' as title,
+    'teal' as color;
 
 select 
     'table' as component,

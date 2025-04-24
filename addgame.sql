@@ -14,14 +14,16 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Cancel' as title;
+    'Cancel' as title,
+    'azure' as color;
 
 select
     'form' as component,
     false as auto_submit,
     'Reset' as reset,
     'addgamesubmit.sql' as action,
-    'Add' as validate;
+    'Add' as validate,
+    'teal' as validate_color;
 
 select 'text' as type, 'Name' as name, true as required;
 select 'textarea' as type, 'Notes' as name, false as required;

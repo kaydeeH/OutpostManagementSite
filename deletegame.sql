@@ -1,7 +1,7 @@
 delete from
 	games
 where
-	game_id = cast(:Id as integer)
+	game_id = $id::integer;
 
 select 
     'title' as component,

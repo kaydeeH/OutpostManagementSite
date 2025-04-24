@@ -5,8 +5,7 @@ set
 	game_notes = :Notes,
 	is_active = cast((CASE WHEN :Active IS NOT NULL THEN 'true' ELSE 'false' END) as boolean)
 where
-	game_id = cast(:Id as integer)
-	and :Name is not null;
+	game_id = $Id::integer;
 
 select 
     'title' as component,
@@ -29,4 +28,5 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Return to Game List' as title;
+    'Return to Game List' as title
+    'azure' as color;
