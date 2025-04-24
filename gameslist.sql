@@ -1,34 +1,35 @@
 select 
-    'title'   as component,
+    'title' as component,
     'The Outpost Arcade' as contents;
 select 
-    'title'   as component,
+    'title' as component,
     'Game Management Portal' as contents,
-    2         as level;
+    2 as level;
 select 
-    'title'   as component,
+    'title' as component,
     'Games List' as contents,
-    3         as level;
+    3 as level;
 
 select 
     'button' as component;
 select 
     '/index.sql' as link,
-    'Home'            as title;
+    'Home' as title;
 select 
     '/addgame.sql' as link,
-    'Add New Game'            as title;
+    'Add New Game' as title;
 
 select 
     'table' as component,
-    TRUE    as hover,
-    TRUE    as striped_rows,
+    TRUE as hover,
+    TRUE as striped_rows,
     'edit' as markdown,
     'delete' as markdown
 
-SELECT game_name AS Name,
-game_notes AS Notes,
-is_active AS Active,
-format('[Edit](editgame.sql?id=%s)', game_id) as Edit,
-format('[Delete](deletegameconfirmation.sql?id=%s)', game_id) as Delete
+SELECT
+    game_name AS Name,
+    game_notes AS Notes,
+    is_active AS Active,
+    format('[Edit](editgame.sql?id=%s)', game_id) as Edit,
+    format('[Delete](deletegameconfirmation.sql?id=%s)', game_id) as Delete
 FROM games;

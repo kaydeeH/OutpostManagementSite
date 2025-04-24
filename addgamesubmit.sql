@@ -4,16 +4,16 @@ values (
 );
 
 select 
-    'title'   as component,
+    'title' as component,
     'The Outpost Arcade' as contents;
 select 
-    'title'   as component,
+    'title' as component,
     'Game Management Portal' as contents,
-    2         as level;
+    2 as level;
 select 
-    'title'   as component,
+    'title' as component,
     'Game Added' as contents,
-    3         as level;
+    3 as level;
 
 select
 	'alert' as component,
@@ -24,4 +24,4 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Return to Game List'            as title;
+    'Return to Game List' as title;
