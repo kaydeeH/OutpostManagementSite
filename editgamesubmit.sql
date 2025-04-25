@@ -28,5 +28,5 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Return to Game List' as title
+    'Return to Game List' as title,
     'azure' as color;

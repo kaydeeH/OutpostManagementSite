@@ -1,7 +1,7 @@
 delete from
 	games
 where
-	game_id = $id::integer;
+	game_id = $Id::integer;
 
 select 
     'title' as component,
@@ -24,4 +24,5 @@ select
     'button' as component;
 select 
     '/gameslist.sql' as link,
-    'Return to Game List' as title;
+    'Return to Game List' as title,
+    'azure' as color;
