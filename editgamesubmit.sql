@@ -1,3 +1,6 @@
+SELECT 'dynamic' AS component,
+       sqlpage.run_sql('authpage.sql') AS properties;
+
 update
 	games
 set
@@ -7,13 +10,6 @@ set
 where
 	game_id = $Id::integer;
 
-select 
-    'title' as component,
-    'The Outpost Arcade' as contents;
-select 
-    'title' as component,
-    'Game Management Portal' as contents,
-    2 as level;
 select 
     'title'   as component,
     'Game Edited' as contents,

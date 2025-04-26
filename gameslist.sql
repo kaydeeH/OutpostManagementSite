@@ -1,10 +1,6 @@
-select 
-    'title' as component,
-    'The Outpost Arcade' as contents;
-select 
-    'title' as component,
-    'Game Management Portal' as contents,
-    2 as level;
+SELECT 'dynamic' AS component,
+       sqlpage.run_sql('authpage.sql') AS properties;
+
 select 
     'title' as component,
     'Games List' as contents,
@@ -26,7 +22,8 @@ select
     TRUE as hover,
     TRUE as striped_rows,
     'edit' as markdown,
-    'delete' as markdown
+    'delete' as markdown,
+    TRUE as sort
 
 SELECT
     game_name AS Name,
